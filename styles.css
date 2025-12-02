@@ -52,7 +52,7 @@ section {
     color: #555; /* Slightly lighter body text */
 }
 
-.hours {
+.menu-note {
     font-style: italic;
     color: #777;
     margin-top: 20px;
@@ -64,11 +64,32 @@ hr {
     background-image: linear-gradient(to right, rgba(165, 136, 0, 0), rgba(165, 136, 0, 0.5), rgba(165, 136, 0, 0));
 }
 
+/* Hours Styling */
+.hours-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.hours-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    width: 250px;
+}
+
+.hours-container li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+/* End Hours Styling */
+
 /* Menu Button Styling */
 .button {
     display: inline-block;
     padding: 15px 30px;
-    margin: 10px; /* Reduced margin to fit two buttons */
+    margin: 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -78,13 +99,13 @@ hr {
 }
 
 .button.primary {
-    background-color: #a58800; /* Primary button - Gold */
-    color: #ffffff; /* White text on button */
+    background-color: #a58800;
+    color: #ffffff;
     border: 2px solid #a58800;
 }
 
 .button.primary:hover {
-    background-color: #bfa000; /* Slightly darker gold on hover */
+    background-color: #bfa000;
     color: #ffffff;
     border-color: #bfa000;
     box-shadow: 0 4px 10px rgba(165, 136, 0, 0.2);
@@ -92,7 +113,7 @@ hr {
 
 /* Footer */
 footer {
-    background-color: #f7f7f7; /* Light gray footer */
+    background-color: #f7f7f7;
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
@@ -110,11 +131,20 @@ footer {
         padding: 50px 10px;
     }
 
-    /* Buttons stack on mobile */
     .button {
         display: block;
         width: 80%;
         margin: 10px auto;
         padding: 12px 20px;
+    }
+
+    .hours-container {
+        flex-direction: column; /* Stack lists vertically on small screens */
+        gap: 0;
+    }
+
+    .hours-container ul {
+        width: 90%;
+        margin: 0 auto 15px auto;
     }
 }
