@@ -1,0 +1,157 @@
+/* Basic Reset and Font Imports */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #f0f0f0; /* Light text color */
+    background-color: #1a1a1a; /* Very dark background */
+    line-height: 1.6;
+}
+
+/* Headings and Titles - Elegant Font */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e6b300; /* Gold/Amber accent color */
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Header/Hero Section */
+.hero {
+    background-color: #000; /* Black background for contrast */
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #e6b300;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(230, 179, 0, 0), rgba(230, 179, 0, 0.75), rgba(230, 179, 0, 0));
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:first-of-type {
+    background-color: #e6b300; /* Primary button - Gold */
+    color: #1a1a1a;
+    border: 2px solid #e6b300;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #e6b300;
+    border: 2px solid #e6b300;
+}
+
+.button:hover {
+    background-color: #ffd633; /* Lighter gold on hover */
+    color: #1a1a1a;
+    border-color: #ffd633;
+}
+
+/* Hours and Menu Section */
+#hours-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.menu-item {
+    width: 45%;
+    min-width: 280px;
+    margin: 15px 0;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    color: #fff;
+    font-size: 1.2em;
+    border-bottom: 1px dotted #444;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item li {
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 4px solid #e6b300;
+    color: #aaa;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    /* Important: Buttons stack nicely and fill the width */
+    .button {
+        display: block;
+        margin: 10px auto; 
+        width: 80%;
+    }
+    
+    .menu-item {
+        width: 90%;
+    }
+}
