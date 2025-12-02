@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3.5em; /* Larger, more dominant title */
+    font-size: 3.5em; 
     margin-bottom: 0.1em;
 }
 
@@ -68,7 +68,7 @@ hr {
 .button {
     display: inline-block;
     padding: 15px 30px;
-    margin: 20px 0;
+    margin: 10px; /* Reduced margin to fit two buttons */
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -92,4 +92,29 @@ hr {
 
 /* Footer */
 footer {
-    background-color:
+    background-color: #f7f7f7; /* Light gray footer */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 4px solid #a58800;
+    color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .hero {
+        padding: 50px 10px;
+    }
+
+    /* Buttons stack on mobile */
+    .button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 12px 20px;
+    }
+}
