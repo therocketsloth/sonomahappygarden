@@ -102,39 +102,24 @@ hr {
 /* --- END IMPROVED HOURS STYLING --- */
 
 
-/* --- CLOSURE / ANNOUNCEMENT NOTICE --- */
-.notice {
-    background-color: #fdfaf0;
-    border: 1px solid rgba(165, 136, 0, 0.35);
-    border-top: 3px solid #a58800;
-    border-radius: 6px;
-    max-width: 560px;
-    margin: 0 auto 10px;
-    padding: 20px 26px;
-    text-align: center;
-}
 
-.notice-label {
+/* --- ANNOUNCEMENT BAR --- */
+.announcement {
+    background-color: #2f2f2f;
+    color: #f2f2f2;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.announcement strong {
+    color: #d4b52e;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: #a58800;
-    margin: 0 0 8px;
-}
-
-.notice-text {
-    font-size: 1.05em;
-    color: #4a4a4a;
-    margin: 0;
-}
-
-.notice-text strong {
-    color: #333;
     white-space: nowrap;
 }
-/* --- END NOTICE --- */
+/* --- END ANNOUNCEMENT BAR --- */
 
 /* Menu Button Styling */
 .button {
@@ -174,8 +159,9 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
-    .notice {
-        padding: 16px 18px;
+    .announcement {
+        font-size: 0.85em;
+        padding: 10px 14px;
     }
 
     h1 {
